@@ -30,12 +30,19 @@ header {
     box-shadow: 0 2px 2px #3a3a3a;
 }
 
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type:none;
-
 }
+
+#menu > li {
+    margin-bottom: 1em;
+} 
 
 header a {
     text-decoration: none;
@@ -49,7 +56,20 @@ h1 {
     color: #252525;
 }
 
-/* Main */
+/* Navigation menu, dropdown toggle */
+
+nav {
+    position: absolute ;
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a; 
+    padding: 0 1rem;
+    left: 0%;
+    display: none;
+
+}
+
+/* Main content */
 main {
     background-color: lightblue;
     /* make main element take up any surplus space to push footer down */
