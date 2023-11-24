@@ -1,24 +1,24 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    }
+}
 
-    /* General styles */
+/* General styles */
 
-    body {
-     min-height: 100vh;
-     display: flex;
-     flex-direction: column;
-     /* Generic projekt styles */
-     color: #3a3a3a;
-     font-family: 'lato', sans-serif;
-     
-    }
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic projekt styles */
+    color: #3a3a3a;
+    font-family: 'lato', sans-serif;
+
+}
 
 /* Header */
 header {
@@ -28,6 +28,9 @@ header {
     z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .active {
@@ -37,12 +40,12 @@ header {
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
-    list-style-type:none;
+    list-style-type: none;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
-} 
+}
 
 header a {
     text-decoration: none;
@@ -59,14 +62,28 @@ h1 {
 /* Navigation menu, dropdown toggle */
 
 nav {
-    position: absolute ;
+    position: absolute;
     background-color: #ffffff;
     width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a; 
+    box-shadow: 0 2px 2px #3a3a3a;
     padding: 0 1rem;
     left: 0%;
     display: none;
+    top: 100%;
+}
 
+/* Nav toggle */
+
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
 }
 
 /* Main content */
