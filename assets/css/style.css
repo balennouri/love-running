@@ -23,7 +23,7 @@ body {
 
 /* Header */
 header {
-    background-color:#ffffff;
+    background-color: #ffffff;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
@@ -113,15 +113,31 @@ footer {
         width: fit-content;
         padding-right: 1rem;
     }
+
     #menu {
         display: flex;
     }
 
-    #menu > li {
-        padding-left: 1rem ;
+    #menu>li {
+        padding-left: 1rem;
     }
-    
+
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0, 5rem;
+
+    }
+
     .nav-toggle-label {
         display: none;
+
+    }
+
+    /* Main content */
+    main {
+        /* Push main content down */
+        margin-top: 79px;
+
     }
 }
